@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>epydial</title><link href="http://epydial.pyneo.org/" rel="alternate"></link><link href="http://epydial.pyneo.org/feeds/yeah.atom.xml" rel="self"></link><id>http://epydial.pyneo.org/</id><updated>2010-12-05T10:20:00+01:00</updated><entry><title>KFZcheck erklärt</title><link href="http://epydial.pyneo.org/kfzcheck-erklart.html" rel="alternate"></link><updated>2010-12-05T10:20:00+01:00</updated><author><name>Alexis Metaireau</name></author><id>tag:epydial.pyneo.org,2010-12-05:kfzcheck-erklart.html</id><summary type="html">&lt;h1&gt;KFZcheck&lt;/h1&gt;
+&lt;p&gt;KFZcheck is a small program written in python and uses the Qt toolkit (since Version 2.0)
+It searches for car (in german kfz) license plates shortcuts and the cities according to 
+the searchword - german example: S for Stuttgart. A german, austrian, swiss, french, italian, polish, russian and czech license plate list is till now included.&lt;/p&gt;
+&lt;p&gt;You can search for the shortcut or for the cityname, normally you search lowercase. If a shortcut matches correctly it will be displayed first. When you search for a city and it gives several results, all will be displayed - For Example you search for 'go' (no shortcut matches), you will get 'GS, Goslar (NiSa) GTH, Gotha (Thür)' as result, because the first letters of the cities are matching. If you write uppercase it will show you all license plates that starts with your search.&lt;/p&gt;
+&lt;p&gt;You can change the country file (csv-file) with a click on KFZcheck at the top and on "country". You can jump to the top, middle and bottom at the menu as well.&lt;/p&gt;
+&lt;p&gt;The ~/.kfzcheck.ini saves the last selected country so you can load your favorite first :) It will
+be set automaticly when you change the country in the gui.&lt;/p&gt;
+&lt;h2&gt;Install&lt;/h2&gt;
+&lt;p&gt;You can install kfzcheck for Maemo out of the extras-devel repository. In the Maemo Package Version overview you can download &lt;a href="http://maemo.org/packages/view/kfzcheck/|source and deb"&gt;http://maemo.org/packages/view/kfzcheck/|source and deb&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;kfzcheck-extras&lt;/h2&gt;
+&lt;p&gt;kfzcheck-extras is a collection of different lists with useful information. After the installation the new lists will be displayed in a new menu point "extras". Till now the following lists are included:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Numbers&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;ingredients&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;foods&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;Molkereien_de&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;german&lt;/span&gt; &lt;span class="n"&gt;dairy&lt;/span&gt; &lt;span class="n"&gt;companys&lt;/span&gt; &lt;span class="n"&gt;with&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;ISO&lt;/span&gt; &lt;span class="n"&gt;codes&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;german&lt;/span&gt; &lt;span class="n"&gt;version&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;Top&lt;/span&gt; &lt;span class="n"&gt;level&lt;/span&gt; &lt;span class="n"&gt;domains&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;IATA&lt;/span&gt; &lt;span class="n"&gt;airport&lt;/span&gt; &lt;span class="n"&gt;codes&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;Internationale&lt;/span&gt; &lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;numbers&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;PLZ&lt;/span&gt; &lt;span class="n"&gt;DE&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;postcodes&lt;/span&gt; &lt;span class="n"&gt;germany&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Install&lt;/h3&gt;
+&lt;p&gt;You can install kfzcheck-extras for Maemo out of the extras-devel repository. In the Maemo Package Version overview you can download on &lt;a href="http://maemo.org/packages/view/kfzcheck-extras/"&gt;http://maemo.org/packages/view/kfzcheck-extras/&lt;/a&gt; the deb package.&lt;/p&gt;
+&lt;h2&gt;Creating a own csv file&lt;/h2&gt;
+&lt;p&gt;KFZcheck searches automatically for csv files in "/opt/kfzcheck/kfzlist/". The files should be
+named with the country code =&amp;gt; Example de.csv for germany.&lt;/p&gt;
+&lt;p&gt;It's possible to create own csv files with any content you like =&amp;gt; numbers, post codes, etc.
+You have only to look that the file has at least two and at most three entrys.&lt;/p&gt;
+&lt;p&gt;When you create a list that should be displayed in the menu point "extras" you have to move the file into kfzlist/extras. Create it, if it not exists.&lt;/p&gt;
+&lt;h3&gt;German file struture - de.csv&lt;/h3&gt;
+&lt;p&gt;The german file structur is for example =&amp;gt; S,Stuttgart,Baden-Württemberg
+S is the car license plate shortcut, Stuttgart the according city to the shortcut and Baden-Württemberg
+stands for a province (a state in state).&lt;/p&gt;
+&lt;h3&gt;Display emblems&lt;/h3&gt;
+&lt;p&gt;When emblems should be displayed you have to create a folder in /opt/kfzcheck/wappen/ with the csv filename.
+In the folder you can save the differend emblems. They have to be .png files with the exactly name of the 
+province (the third entry in the csv file). The search after the icons is casesensitive.&lt;/p&gt;
+&lt;h2&gt;Developer information&lt;/h2&gt;
+&lt;p&gt;Useful information for pyqt. When you use the designer to create your ui you can translate it with "pyuic4 gui.ui -o gui.py"
+For language translation you have to add the language file (de_DE.ts for example) to "translate.pro" and call it with
+"pylupdate4 translate.pro". The language file will be created in the "locale" folder. The easiest way is to edit the files with
+qt linguist. It's a graphical user interface for translation. After the translation you have to release the file (create the *.qm file)
+in the File dialog.&lt;/p&gt;
+&lt;h2&gt;Feedback&lt;/h2&gt;
+&lt;p&gt;Any feedback or when you have created a country pack, numbers, post code, any other useful csv file or a translation, 
+i'am interested to integrate it in the offical release - please mail me at pbeck [at] yourse [DOT] de :)&lt;/p&gt;
+&lt;h2&gt;Data source&lt;/h2&gt;
+&lt;p&gt;The most parts of the datasets (license plates files, etc.) has Wikipedia as source. &lt;/p&gt;
+&lt;h2&gt;Contributors in the Maemo version&lt;/h2&gt;
+&lt;p&gt;Thanks to all contributors :) For new Datasets, Bug reports and all helping hands :) &lt;/p&gt;
+&lt;p&gt;Bartholomäus Wloka
+treofant
+Daniel Fett
+Bernd Abel
+Olaf Schulz
+Vadim Frolov&lt;/p&gt;</summary><category term="thats"></category><category term="awesome"></category></entry><entry><title>Gitbot Anleitung</title><link href="http://epydial.pyneo.org/gitbot-anleitung.html" rel="alternate"></link><updated>2010-12-04T10:20:00+01:00</updated><author><name>Alexis Metaireau</name></author><id>tag:epydial.pyneo.org,2010-12-04:gitbot-anleitung.html</id><summary type="html">&lt;h1&gt;gitbot&lt;/h1&gt;
+&lt;p&gt;Gitbot prints git updates to the irc network. For this it uses gitcheck.py to generate a list with all updates since the last posting and gitbot.py do the posting to the network.&lt;/p&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;monitors repos and branches&lt;/li&gt;
+&lt;li&gt;can post in more than one channel&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;can save factoids&lt;/p&gt;
+&lt;p&gt;Example for learning: !pyneo is a mobile framework, 
+Example for read: ?pyneo, 
+Example with username: ?pyneo PBeck - 
+!facts gives a overview.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Example Configuration at the end of gitbot.py (you can use gitcheck.py for output to the terminal)&lt;/h2&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;botname&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;pyneo&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bot&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;channels&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;#&lt;/span&gt;&lt;span class="n"&gt;pyneo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;much&lt;/span&gt; &lt;span class="n"&gt;channels&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="n"&gt;like&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;channels&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;channel1&lt;/span&gt;&lt;span class="sc"&gt;&amp;#39;,&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;channel2&lt;/span&gt;&lt;span class="sc"&gt;&amp;#39;,&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;channel3&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;network&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;chat&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;freenode&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;net&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;port&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;6667&lt;/span&gt;
+
+&lt;span class="n"&gt;repolist&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;list&lt;/span&gt; &lt;span class="n"&gt;with&lt;/span&gt; &lt;span class="n"&gt;all&lt;/span&gt; &lt;span class="n"&gt;controlled&lt;/span&gt; &lt;span class="n"&gt;repositorys&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//git.gitorious.org/epydial/epydial.git&amp;#39;,&amp;#39;master&amp;#39;],&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//git.gitorious.org/epydial/epydial.git&amp;#39;,&amp;#39;pyneo-1.32&amp;#39;],&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//git.gitorious.org/epydial/epydial-new.git&amp;#39;,&amp;#39;master&amp;#39;],&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//git.pyneo.org/browse/cgit/paroli&amp;#39;,&amp;#39;master&amp;#39;],&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//git.pyneo.org/browse/cgit/pyneo&amp;#39;,&amp;#39;master&amp;#39;],&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//git.pyneo.org/browse/cgit/pyneo-zadosk&amp;#39;,&amp;#39;master&amp;#39;],&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//git.pyneo.org/browse/cgit/pyneo-zadwm&amp;#39;,&amp;#39;master&amp;#39;],&lt;/span&gt;
+&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Example entry&lt;/h2&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;04&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;pyneo&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bot&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;epydial&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="n"&gt;F&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;Gau&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="n"&gt;Sat&lt;/span&gt; &lt;span class="n"&gt;Jan&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;01&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;41&lt;/span&gt; &lt;span class="mi"&gt;2011&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="mi"&gt;3063127&lt;/span&gt;&lt;span class="n"&gt;f2a&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;lock&lt;/span&gt; &lt;span class="n"&gt;icon&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt; &lt;span class="n"&gt;screen&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Use it on the server&lt;/h2&gt;
+&lt;p&gt;The small script runtest.py checks if gitbot.py is running. A example entry for cronjob is:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="err"&gt;*/&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gitbot&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;runtest&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sh&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="thats"></category><category term="awesome"></category></entry></feed>

@@ -20,3 +20,7 @@ SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
+THEME = "epydialtheme"
+
+DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'blog')
+PAGINATED_DIRECT_TEMPLATES = (('blog',))

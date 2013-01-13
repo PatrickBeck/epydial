@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+    <title>epydial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="epydial the pyneo user interface">
+    <meta name="author" content="Patrick Beck">
+
+                 <link href="http://epydial.pyneo.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="epydial Full Atom Feed" />
+                                                <link href="http://epydial.pyneo.org/feeds/yeah.atom.xml" type="application/atom+xml" rel="alternate" title="epydial Categories Atom Feed" />
+                                
+ 
+ 
+    <!-- Le styles -->
+        <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
+ 
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/bootstrap-responsive.css" rel="stylesheet">
+  
+    <script type="text/javascript" src="../static/js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" href="../static/fancybox/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen" />
+    <script type="text/javascript" src="../static/fancybox/jquery.fancybox.pack.js?v=2.1.3"></script>
+    <link rel="stylesheet" href="../static/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="../static/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="../static/fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+    <link rel="stylesheet" href="../static/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="../static/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../static/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    
+    <style type="text/css">
+      body {
+        background-image: url(../static/img/bg.jpg);
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      
+      [class^="icon-"], [class*=" icon-"] {
+        width: 20px;
+}
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 20px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+
+ 	<script type="text/javascript">
+    $(document).ready(function() {
+	    $(".fancybox-thumb").fancybox({
+	    	openEffect	: 'none',
+		    closeEffect	: 'none'
+	    });
+    });
+	</script>
+
+  
+  </head>
+
+  <body>
+
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+           <li class="active"><a href="index.html">Home</a></li>
+           <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#about">About</a></li>
+	  <li><a href="index.html#screenshots">Screenshots</a></li>
+                                                   <li><a href="./pages/twitter-anleitung.html">Twitter Anleitung</a></li>
+                          	  <li><a href="https://gitorious.org/~fgau">Get it now!</a></li>
+          <li><a href="index.html#contact">Contact us</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-narrow" style="padding-top: 10px; margin-top: -40px;">
+
+        <section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="gitbot-anleitung.html" rel="bookmark"
+         title="Permalink to Gitbot Anleitung">Gitbot Anleitung</a></h2>
+  
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2010-12-04T10:20:00">
+      Sa 04 Dezember 2010
+    </abbr>
+        <address class="vcard author">
+      By <a class="url fn" href="./author/alexis-metaireau.html">Alexis Metaireau</a>
+    </address>
+      </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h1>gitbot</h1>
+<p>Gitbot prints git updates to the irc network. For this it uses gitcheck.py to generate a list with all updates since the last posting and gitbot.py do the posting to the network.</p>
+<h2>Features</h2>
+<ul>
+<li>monitors repos and branches</li>
+<li>can post in more than one channel</li>
+<li>
+<p>can save factoids</p>
+<p>Example for learning: !pyneo is a mobile framework, 
+Example for read: ?pyneo, 
+Example with username: ?pyneo PBeck - 
+!facts gives a overview.</p>
+</li>
+</ul>
+<h2>Example Configuration at the end of gitbot.py (you can use gitcheck.py for output to the terminal)</h2>
+<div class="codehilite"><pre><span class="n">botname</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">pyneo</span><span class="o">-</span><span class="n">bot</span><span class="err">&#39;</span>
+<span class="n">channels</span> <span class="o">=</span> <span class="p">[</span><span class="err">&#39;#</span><span class="n">pyneo</span><span class="p">.</span><span class="n">org</span><span class="err">&#39;</span><span class="p">]</span> <span class="err">#</span> <span class="n">you</span> <span class="n">can</span> <span class="n">add</span> <span class="n">as</span> <span class="n">much</span> <span class="n">channels</span> <span class="n">as</span> <span class="n">you</span> <span class="n">like</span> <span class="o">=&gt;</span> <span class="n">channels</span> <span class="o">=</span> <span class="p">[</span><span class="err">&#39;</span><span class="n">channel1</span><span class="sc">&#39;,&#39;</span><span class="n">channel2</span><span class="sc">&#39;,&#39;</span><span class="n">channel3</span><span class="err">&#39;</span><span class="p">]</span>
+<span class="n">network</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">chat</span><span class="p">.</span><span class="n">freenode</span><span class="p">.</span><span class="n">net</span><span class="err">&#39;</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">6667</span>
+
+<span class="n">repolist</span> <span class="o">=</span> <span class="p">[</span> <span class="err">#</span> <span class="n">a</span> <span class="n">list</span> <span class="n">with</span> <span class="n">all</span> <span class="n">controlled</span> <span class="n">repositorys</span>
+<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.gitorious.org/epydial/epydial.git&#39;,&#39;master&#39;],</span>
+<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.gitorious.org/epydial/epydial.git&#39;,&#39;pyneo-1.32&#39;],</span>
+<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.gitorious.org/epydial/epydial-new.git&#39;,&#39;master&#39;],</span>
+<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.pyneo.org/browse/cgit/paroli&#39;,&#39;master&#39;],</span>
+<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.pyneo.org/browse/cgit/pyneo&#39;,&#39;master&#39;],</span>
+<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.pyneo.org/browse/cgit/pyneo-zadosk&#39;,&#39;master&#39;],</span>
+<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.pyneo.org/browse/cgit/pyneo-zadwm&#39;,&#39;master&#39;],</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<h2>Example entry</h2>
+<div class="codehilite"><pre><span class="mi">16</span><span class="o">:</span><span class="mi">15</span><span class="o">:</span><span class="mi">04</span> <span class="o">&lt;</span> <span class="n">pyneo</span><span class="o">-</span><span class="n">bot</span><span class="o">&gt;</span> <span class="o">[</span><span class="n">epydial</span><span class="o">-</span><span class="k">new</span> <span class="o">/</span> <span class="n">master</span><span class="o">]</span> <span class="n">F</span><span class="o">.</span> <span class="n">Gau</span> <span class="n">at</span> <span class="n">Sat</span> <span class="n">Jan</span> <span class="mi">1</span> <span class="mi">16</span><span class="o">:</span><span class="mi">01</span><span class="o">:</span><span class="mi">41</span> <span class="mi">2011</span> <span class="n">on</span> <span class="mi">3063127</span><span class="n">f2a</span><span class="o">...</span> <span class="o">[</span><span class="n">add</span> <span class="n">lock</span> <span class="n">icon</span> <span class="n">on</span> <span class="n">main</span> <span class="n">screen</span><span class="o">]</span>
+</pre></div>
+
+
+<h2>Use it on the server</h2>
+<p>The small script runtest.py checks if gitbot.py is running. A example entry for cronjob is:</p>
+<div class="codehilite"><pre><span class="err">*/</span><span class="mi">5</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">gitbot</span><span class="o">/</span><span class="n">runtest</span><span class="p">.</span><span class="n">sh</span>
+</pre></div>
+  </div><!-- /.entry-content -->
+</section>
+
+      <div class="footer pagination-centered">
+        <p>&copy; epydial 2012 | made with bootstrap | Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.</p>
+      </div>
+
+    </div> 
+  </body>
+</html>

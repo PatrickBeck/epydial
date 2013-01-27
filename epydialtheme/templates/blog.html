@@ -6,7 +6,7 @@
 {% block content_title %}
 {% endblock %}
 
-
+<h1>Whats new?</h1>
 {% for article in articles_page.object_list %}
        <article class="hentry">
        <hr>
@@ -15,6 +15,8 @@
                 <footer class="post-info pagination-right">
                     <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
                     {% if article.author %}<address class="vcard author">By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>{% endif %}
+                    {% if article.tags %}<p>tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}</p>{% endif %}
+                    <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">comments</a>
                 </footer><!-- /.post-info -->
                 <hr>
                 <div class="entry-content"> {{ article.content }} </div><!-- /.entry-content -->

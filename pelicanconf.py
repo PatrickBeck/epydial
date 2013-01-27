@@ -24,3 +24,4 @@ THEME = "epydialtheme"
 
 DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'blog')
 PAGINATED_DIRECT_TEMPLATES = (('blog',))
+DISQUS_SITENAME = 'epydial'

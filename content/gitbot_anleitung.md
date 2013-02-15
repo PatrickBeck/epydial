@@ -3,9 +3,6 @@ Date: 2010-12-04 10:20
 Tags: thats, awesome
 Category: yeah
 Author: Alexis Metaireau
-Summary: Gitbot anleitung von github
-
-# gitbot
 
 Gitbot prints git updates to the irc network. For this it uses gitcheck.py to generate a list with all updates since the last posting and gitbot.py do the posting to the network.
 

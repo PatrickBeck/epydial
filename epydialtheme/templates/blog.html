@@ -3,23 +3,23 @@
 
 
 <section id="content">
-{% block content_title %}
-{% endblock %}
 
-<h1>Whats new?</h1>
+<h1>Whats Up?</h1><hr>
+
+
 {% for article in articles_page.object_list %}
        <article class="hentry">
-       <hr>
-                <header> <h2 class="entry-title pagination-right"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
-                
-                <footer class="post-info pagination-right">
+             <p>   <footer class="post-info ">
                     <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-                    {% if article.author %}<address class="vcard author">By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>{% endif %}
-                    {% if article.tags %}<p>tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} </a>{% endfor %}</p>{% endif %}
-                    <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">comments</a>
+                    {% if article.author %} | <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>{% endif %}</p>
+                <header> <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3> </header>
+                
+
+                    
+                    
                 </footer><!-- /.post-info -->
-                <hr>
-                <div class="entry-content"> {{ article.content }} </div><!-- /.entry-content -->
+                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+                <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">comments</a></p>
         </article>
 {% endfor %}
 

@@ -3,31 +3,25 @@
 
 <section id="content" class="body">
   <header>
-  <hr>
-    <h2 class="entry-title pagination-right">
+    <h2 class="entry-title">
       <a href="{{ article.url }}" rel="bookmark"
          title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
  {% import 'translations.html' as translations with context %}
  {{ translations.translations_for(article) }}
   </header>
   
-  <footer class="post-info pagination-right">
-    <abbr class="published" title="{{ article.date.isoformat() }}">
-      {{ article.locale_date }}
-    </abbr>
-    {% if article.author %}
-    <address class="vcard author">
-      By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-    </address>
-    {% endif %}
-    {% if article.tags %}<p>tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} </a>{% endfor %}</p>{% endif %}
-    <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">comments</a>
-  </footer><!-- /.post-info -->
-  <hr>
+               <p><footer class="post-info">
+                    <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+                    {% if article.author %} | <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>{% endif %}</p>
+                    
+                    
+                </footer><!-- /.post-info -->
+  
   <div class="entry-content">
     {{ article.content }}
   </div><!-- /.entry-content -->
-  <hr>
+  
+    <hr>
       <div id="disqus_thread"></div>
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

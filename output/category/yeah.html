@@ -28,7 +28,7 @@
     <script type="text/javascript" src="../theme/fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
     <link rel="stylesheet" href="../theme/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
     <script type="text/javascript" src="../theme/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <!--[if IE 7]>
     <link rel="stylesheet" href="../theme/css/font-awesome-ie7.min.css">
     <![endif]-->
@@ -36,6 +36,7 @@
     <style type="text/css">
       body {
         background-image: url(../theme/img/bg.jpg);
+        font-family: 'Ubuntu', sans-serif !important;
       }
       
       [class^="icon-"], [class*=" icon-"] {
@@ -76,7 +77,11 @@
         }      
        
       .footer {
-        background-color: black;
+        
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
         color: white;
         padding: 20px;
         margin: -20px;
@@ -89,6 +94,8 @@
        hr {
         border-color: black;
         }        
+        
+      
         
     </style>
 
@@ -143,8 +150,7 @@
                 <li><a href="../blog.html">Blog</a></li>
                 <li><a href="../index.html#about">About</a></li>
 	            <li><a href="../index.html#screenshots">Screenshots</a></li>
-                                                                    <li><a href="../pages/twitter-anleitung.html">Twitter Anleitung</a></li>
-                                        	    <li><a href="https://gitorious.org/~fgau">Get it now!</a></li>
+                                                                        	    <li><a href="https://gitorious.org/~fgau">Get it now!</a></li>
                 <li><a href="../index.html#contact">Contact us</a></li>
                 <li><a href="../feeds/all.atom.xml"><i class="icon-rss icon-2x"></i></a></li
             </ul>
@@ -165,214 +171,62 @@
 
 <section id="content">
 
-<h1>Whats new?</h1>
+<h1>Whats Up?</h1><hr>
+
+
        <article class="hentry">
-       <hr>
-                <header> <h2 class="entry-title pagination-right"><a href="../kfzcheck-erklart.html" rel="bookmark" title="Permalink to KFZcheck erklärt">KFZcheck erklärt</a></h2> </header>
-                
-                <footer class="post-info pagination-right">
+             <p>   <footer class="post-info ">
                     <abbr class="published" title="2010-12-05T10:20:00"> So 05 Dezember 2010 </abbr>
-                    <address class="vcard author">By <a class="url fn" href="../author/alexis-metaireau.html">Alexis Metaireau</a></address>                    <p>tags: <a href="../tag/thats.html">thats </a><a href="../tag/awesome.html">awesome </a></p>                    <a href="../kfzcheck-erklart.html#disqus_thread">comments</a>
+                     | <a class="url fn" href="../author/alexis-metaireau.html">Alexis Metaireau</a></p>
+                <header> <h3 class="entry-title"><a href="../kfzcheck-erklart.html" rel="bookmark" title="Permalink to KFZcheck erklärt">KFZcheck erklärt</a></h3> </header>
+                
+
+                    
+                    
                 </footer><!-- /.post-info -->
-                <hr>
-                <div class="entry-content"> <h1>KFZcheck</h1>
-<p>KFZcheck is a small program written in python and uses the Qt toolkit (since Version 2.0)
+                <div class="entry-content"> <p>KFZcheck is a small program written in python and uses the Qt toolkit (since Version 2.0)
 It searches for car (in german kfz) license plates shortcuts and the cities according to 
-the searchword - german example: S for Stuttgart. A german, austrian, swiss, french, italian, polish, russian and czech license plate list is till now included.</p>
-<p>You can search for the shortcut or for the cityname, normally you search lowercase. If a shortcut matches correctly it will be displayed first. When you search for a city and it gives several results, all will be displayed - For Example you search for 'go' (no shortcut matches), you will get 'GS, Goslar (NiSa) GTH, Gotha (Thür)' as result, because the first letters of the cities are matching. If you write uppercase it will show you all license plates that starts with your search.</p>
-<p>You can change the country file (csv-file) with a click on KFZcheck at the top and on "country". You can jump to the top, middle and bottom at the menu as well.</p>
-<p>The ~/.kfzcheck.ini saves the last selected country so you can load your favorite first :) It will
-be set automaticly when you change the country in the gui.</p>
-<h2>Install</h2>
-<p>You can install kfzcheck for Maemo out of the extras-devel repository. In the Maemo Package Version overview you can download <a href="http://maemo.org/packages/view/kfzcheck/|source and deb">http://maemo.org/packages/view/kfzcheck/|source and deb</a></p>
-<h2>kfzcheck-extras</h2>
-<p>kfzcheck-extras is a collection of different lists with useful information. After the installation the new lists will be displayed in a new menu point "extras". Till now the following lists are included:</p>
-<div class="codehilite"><pre><span class="o">*</span> <span class="n">E</span><span class="o">-</span><span class="n">Numbers</span> <span class="o">-</span> <span class="n">ingredients</span> <span class="n">in</span> <span class="n">foods</span>
-<span class="o">*</span> <span class="n">Molkereien_de</span> <span class="o">-</span> <span class="n">german</span> <span class="n">dairy</span> <span class="n">companys</span> <span class="n">with</span> <span class="n">name</span> <span class="n">out</span> <span class="n">of</span> <span class="n">a</span> <span class="n">number</span>
-<span class="o">*</span> <span class="n">ISO</span> <span class="n">codes</span> <span class="o">-</span> <span class="n">german</span> <span class="n">version</span>
-<span class="o">*</span> <span class="n">Top</span> <span class="n">level</span> <span class="n">domains</span>
-<span class="o">*</span> <span class="n">IATA</span> <span class="n">airport</span> <span class="n">codes</span>
-<span class="o">*</span> <span class="n">Internationale</span> <span class="n">call</span> <span class="n">numbers</span>
-<span class="o">*</span> <span class="n">PLZ</span> <span class="n">DE</span> <span class="o">-</span> <span class="n">postcodes</span> <span class="n">germany</span>
-</pre></div>
-
-
-<h3>Install</h3>
-<p>You can install kfzcheck-extras for Maemo out of the extras-devel repository. In the Maemo Package Version overview you can download on <a href="http://maemo.org/packages/view/kfzcheck-extras/">http://maemo.org/packages/view/kfzcheck-extras/</a> the deb package.</p>
-<h2>Creating a own csv file</h2>
-<p>KFZcheck searches automatically for csv files in "/opt/kfzcheck/kfzlist/". The files should be
-named with the country code =&gt; Example de.csv for germany.</p>
-<p>It's possible to create own csv files with any content you like =&gt; numbers, post codes, etc.
-You have only to look that the file has at least two and at most three entrys.</p>
-<p>When you create a list that should be displayed in the menu point "extras" you have to move the file into kfzlist/extras. Create it, if it not exists.</p>
-<h3>German file struture - de.csv</h3>
-<p>The german file structur is for example =&gt; S,Stuttgart,Baden-Württemberg
-S is the car license plate shortcut, Stuttgart the according city to the shortcut and Baden-Württemberg
-stands for a province (a state in state).</p>
-<h3>Display emblems</h3>
-<p>When emblems should be displayed you have to create a folder in /opt/kfzcheck/wappen/ with the csv filename.
-In the folder you can save the differend emblems. They have to be .png files with the exactly name of the 
-province (the third entry in the csv file). The search after the icons is casesensitive.</p>
-<h2>Developer information</h2>
-<p>Useful information for pyqt. When you use the designer to create your ui you can translate it with "pyuic4 gui.ui -o gui.py"
-For language translation you have to add the language file (de_DE.ts for example) to "translate.pro" and call it with
-"pylupdate4 translate.pro". The language file will be created in the "locale" folder. The easiest way is to edit the files with
-qt linguist. It's a graphical user interface for translation. After the translation you have to release the file (create the *.qm file)
-in the File dialog.</p>
-<h2>Feedback</h2>
-<p>Any feedback or when you have created a country pack, numbers, post code, any other useful csv file or a translation, 
-i'am interested to integrate it in the offical release - please mail me at pbeck [at] yourse [DOT] de :)</p>
-<h2>Data source</h2>
-<p>The most parts of the datasets (license plates files, etc.) has Wikipedia as source. </p>
-<h2>Contributors in the Maemo version</h2>
-<p>Thanks to all contributors :) For new Datasets, Bug reports and all helping hands :) </p>
-<p>Bartholomäus Wloka
-treofant
-Daniel Fett
-Bernd Abel
-Olaf Schulz
-Vadim Frolov</p> </div><!-- /.entry-content -->
+the searchword - german example: S for Stuttgart. A german, austrian, swiss, french, italian, polish, russian and czech license ...</p> </div><!-- /.entry-content -->
+                <a href="../kfzcheck-erklart.html#disqus_thread">comments</a></p>
         </article>
        <article class="hentry">
-       <hr>
-                <header> <h2 class="entry-title pagination-right"><a href="../gitbot-anleitung.html" rel="bookmark" title="Permalink to Gitbot Anleitung">Gitbot Anleitung</a></h2> </header>
-                
-                <footer class="post-info pagination-right">
+             <p>   <footer class="post-info ">
                     <abbr class="published" title="2010-12-04T10:20:00"> Sa 04 Dezember 2010 </abbr>
-                    <address class="vcard author">By <a class="url fn" href="../author/alexis-metaireau.html">Alexis Metaireau</a></address>                    <p>tags: <a href="../tag/thats.html">thats </a><a href="../tag/awesome.html">awesome </a></p>                    <a href="../gitbot-anleitung.html#disqus_thread">comments</a>
+                     | <a class="url fn" href="../author/alexis-metaireau.html">Alexis Metaireau</a></p>
+                <header> <h3 class="entry-title"><a href="../gitbot-anleitung.html" rel="bookmark" title="Permalink to Gitbot Anleitung">Gitbot Anleitung</a></h3> </header>
+                
+
+                    
+                    
                 </footer><!-- /.post-info -->
-                <hr>
-                <div class="entry-content"> <h1>gitbot</h1>
-<p>Gitbot prints git updates to the irc network. For this it uses gitcheck.py to generate a list with all updates since the last posting and gitbot.py do the posting to the network.</p>
+                <div class="entry-content"> <p>Gitbot prints git updates to the irc network. For this it uses gitcheck.py to generate a list with all updates since the last posting and gitbot.py do the posting to the network.</p>
 <h2>Features</h2>
 <ul>
 <li>monitors repos and branches</li>
 <li>can post in more than one channel</li>
 <li>
 <p>can save factoids</p>
-<p>Example for learning: !pyneo is a mobile framework, 
-Example for read: ?pyneo, 
-Example with username: ?pyneo PBeck - 
-!facts gives a overview.</p>
-</li>
-</ul>
-<h2>Example Configuration at the end of gitbot.py (you can use gitcheck.py for output to the terminal)</h2>
-<div class="codehilite"><pre><span class="n">botname</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">pyneo</span><span class="o">-</span><span class="n">bot</span><span class="err">&#39;</span>
-<span class="n">channels</span> <span class="o">=</span> <span class="p">[</span><span class="err">&#39;#</span><span class="n">pyneo</span><span class="p">.</span><span class="n">org</span><span class="err">&#39;</span><span class="p">]</span> <span class="err">#</span> <span class="n">you</span> <span class="n">can</span> <span class="n">add</span> <span class="n">as</span> <span class="n">much</span> <span class="n">channels</span> <span class="n">as</span> <span class="n">you</span> <span class="n">like</span> <span class="o">=&gt;</span> <span class="n">channels</span> <span class="o">=</span> <span class="p">[</span><span class="err">&#39;</span><span class="n">channel1</span><span class="sc">&#39;,&#39;</span><span class="n">channel2</span><span class="sc">&#39;,&#39;</span><span class="n">channel3</span><span class="err">&#39;</span><span class="p">]</span>
-<span class="n">network</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">chat</span><span class="p">.</span><span class="n">freenode</span><span class="p">.</span><span class="n">net</span><span class="err">&#39;</span>
-<span class="n">port</span> <span class="o">=</span> <span class="mi">6667</span>
-
-<span class="n">repolist</span> <span class="o">=</span> <span class="p">[</span> <span class="err">#</span> <span class="n">a</span> <span class="n">list</span> <span class="n">with</span> <span class="n">all</span> <span class="n">controlled</span> <span class="n">repositorys</span>
-<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.gitorious.org/epydial/epydial.git&#39;,&#39;master&#39;],</span>
-<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.gitorious.org/epydial/epydial.git&#39;,&#39;pyneo-1.32&#39;],</span>
-<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.gitorious.org/epydial/epydial-new.git&#39;,&#39;master&#39;],</span>
-<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.pyneo.org/browse/cgit/paroli&#39;,&#39;master&#39;],</span>
-<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.pyneo.org/browse/cgit/pyneo&#39;,&#39;master&#39;],</span>
-<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.pyneo.org/browse/cgit/pyneo-zadosk&#39;,&#39;master&#39;],</span>
-<span class="p">[</span><span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//git.pyneo.org/browse/cgit/pyneo-zadwm&#39;,&#39;master&#39;],</span>
-<span class="p">]</span>
-</pre></div>
-
-
-<h2>Example entry</h2>
-<div class="codehilite"><pre><span class="mi">16</span><span class="o">:</span><span class="mi">15</span><span class="o">:</span><span class="mi">04</span> <span class="o">&lt;</span> <span class="n">pyneo</span><span class="o">-</span><span class="n">bot</span><span class="o">&gt;</span> <span class="o">[</span><span class="n">epydial</span><span class="o">-</span><span class="k">new</span> <span class="o">/</span> <span class="n">master</span><span class="o">]</span> <span class="n">F</span><span class="o">.</span> <span class="n">Gau</span> <span class="n">at</span> <span class="n">Sat</span> <span class="n">Jan</span> <span class="mi">1</span> <span class="mi">16</span><span class="o">:</span><span class="mi">01</span><span class="o">:</span><span class="mi">41</span> <span class="mi">2011</span> <span class="n">on</span> <span class="mi">3063127</span><span class="n">f2a</span><span class="o">...</span> <span class="o">[</span><span class="n">add</span> <span class="n">lock</span> <span class="n">icon</span> <span class="n">on</span> <span class="n">main</span> <span class="n">screen</span><span class="o">]</span>
-</pre></div>
-
-
-<h2>Use it on the server</h2>
-<p>The small script runtest.py checks if gitbot.py is running. A example entry for cronjob is:</p>
-<div class="codehilite"><pre><span class="err">*/</span><span class="mi">5</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">gitbot</span><span class="o">/</span><span class="n">runtest</span><span class="p">.</span><span class="n">sh</span>
-</pre></div> </div><!-- /.entry-content -->
+<p>Example ...</p></li></ul> </div><!-- /.entry-content -->
+                <a href="../gitbot-anleitung.html#disqus_thread">comments</a></p>
         </article>
        <article class="hentry">
-       <hr>
-                <header> <h2 class="entry-title pagination-right"><a href="../twitter-anleitung.html" rel="bookmark" title="Permalink to Twitter Anleitung">Twitter Anleitung</a></h2> </header>
-                
-                <footer class="post-info pagination-right">
+             <p>   <footer class="post-info ">
                     <abbr class="published" title="2010-12-03T10:20:00"> Fr 03 Dezember 2010 </abbr>
-                    <address class="vcard author">By <a class="url fn" href="../author/alexis-metaireau.html">Alexis Metaireau</a></address>                    <p>tags: <a href="../tag/thats.html">thats </a><a href="../tag/awesome.html">awesome </a></p>                    <a href="../twitter-anleitung.html#disqus_thread">comments</a>
+                     | <a class="url fn" href="../author/alexis-metaireau.html">Alexis Metaireau</a></p>
+                <header> <h3 class="entry-title"><a href="../twitter-anleitung.html" rel="bookmark" title="Permalink to Twitter Anleitung">Twitter Anleitung</a></h3> </header>
+                
+
+                    
+                    
                 </footer><!-- /.post-info -->
-                <hr>
-                <div class="entry-content"> <h1><a href="http://twitter.github.com/bootstrap">Twitter Bootstrap v2.2.2</a> <a href="http://travis-ci.org/twitter/bootstrap"><img alt="Build Status" src="https://secure.travis-ci.org/twitter/bootstrap.png" /></a></h1>
-<p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by <a href="http://twitter.com/mdo">Mark Otto</a> and <a href="http://twitter.com/fat">Jacob Thornton</a>.</p>
+                <div class="entry-content"> <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by <a href="http://twitter.com/mdo">Mark Otto</a> and <a href="http://twitter.com/fat">Jacob Thornton</a>.</p>
 <p>To get started, checkout http://getbootstrap.com!</p>
 <h2>Quick start</h2>
 <p>Three quick start options are available:</p>
 <ul>
 <li><a href="https://github.com/twitter/bootstrap/zipball/master">Download the latest release</a>.</li>
-<li>Clone the repo: <code>git clone git://github.com/twitter/bootstrap.git</code>.</li>
-<li>Install with Twitter's <a href="http://twitter.github.com/bower">Bower</a>: <code>bower install bootstrap</code>.</li>
-</ul>
-<h2>Versioning</h2>
-<p>For transparency and insight into our release cycle, and for striving to maintain backward compatibility, Bootstrap will be maintained under the Semantic Versioning guidelines as much as possible.</p>
-<p>Releases will be numbered with the following format:</p>
-<p><code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</code></p>
-<p>And constructed with the following guidelines:</p>
-<ul>
-<li>Breaking backward compatibility bumps the major (and resets the minor and patch)</li>
-<li>New additions without breaking backward compatibility bumps the minor (and resets the patch)</li>
-<li>Bug fixes and misc changes bumps the patch</li>
-</ul>
-<p>For more information on SemVer, please visit http://semver.org/.</p>
-<h2>Bug tracker</h2>
-<p>Have a bug or a feature request? <a href="https://github.com/twitter/bootstrap/issues">Please open a new issue</a>. Before opening any issue, please search for existing issues and read the <a href="https://github.com/necolas/issue-guidelines">Issue Guidelines</a>, written by <a href="https://github.com/necolas/">Nicolas Gallagher</a>.</p>
-<h2>Community</h2>
-<p>Keep track of development and community news.</p>
-<ul>
-<li>Follow <a href="http://twitter.com/twbootstrap">@twbootstrap on Twitter</a>.</li>
-<li>Read and subscribe to the <a href="http://blog.getbootstrap.com">The Official Twitter Bootstrap Blog</a>.</li>
-<li>Have a question that's not a feature request or bug report? <a href="http://groups.google.com/group/twitter-bootstrap">Ask on the mailing list.</a></li>
-<li>Chat with fellow Bootstrappers in IRC. On the <code>irc.freenode.net</code> server, in the <code>##twitter-bootstrap</code> channel.</li>
-</ul>
-<h2>Developers</h2>
-<p>We have included a makefile with convenience methods for working with the Bootstrap library.</p>
-<ul>
-<li><strong>dependencies</strong>
-Our makefile depends on you having recess, connect, uglify.js, and jshint installed. To install, just run the following command in npm:</li>
-</ul>
-<div class="codehilite"><pre><span class="err">$</span> <span class="n">npm</span> <span class="n">install</span> <span class="n">recess</span> <span class="n">connect</span> <span class="n">uglify</span><span class="o">-</span><span class="n">js</span> <span class="n">jshint</span> <span class="o">-</span><span class="n">g</span>
-</pre></div>
-
-
-<ul>
-<li>
-<p><strong>build</strong> - <code>make</code>
-Runs the recess compiler to rebuild the <code>/less</code> files and compiles the docs pages. Requires recess and uglify-js. <a href="http://twitter.github.com/bootstrap/extend.html#compiling">Read more in our docs &raquo;</a></p>
-</li>
-<li>
-<p><strong>test</strong> - <code>make test</code>
-Runs jshint and qunit tests headlessly in <a href="http://code.google.com/p/phantomjs/">phantomjs</a> (used for ci). Depends on having phantomjs installed.</p>
-</li>
-<li>
-<p><strong>watch</strong> - <code>make watch</code>
-This is a convenience method for watching just Less files and automatically building them whenever you save. Requires the Watchr gem.</p>
-</li>
-</ul>
-<h2>Contributing</h2>
-<p>Please submit all pull requests against *-wip branches. If your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the <a href="http://github.com/mdo/code-guide">Code Guide</a>, maintained by <a href="http://github.com/mdo">Mark Otto</a>.</p>
-<p>Thanks!</p>
-<h2>Authors</h2>
-<p><strong>Mark Otto</strong></p>
-<ul>
-<li>http://twitter.com/mdo</li>
-<li>http://github.com/mdo</li>
-</ul>
-<p><strong>Jacob Thornton</strong></p>
-<ul>
-<li>http://twitter.com/fat</li>
-<li>http://github.com/fat</li>
-</ul>
-<h2>Copyright and license</h2>
-<p>Copyright 2012 Twitter, Inc.</p>
-<p>Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this work except in compliance with the License.
-You may obtain a copy of the License in the LICENSE file, or at:</p>
-<p>http://www.apache.org/licenses/LICENSE-2.0</p>
-<p>Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.</p> </div><!-- /.entry-content -->
+<li>Clone the repo: <code>git clone git://github ...</code></li></ul> </div><!-- /.entry-content -->
+                <a href="../twitter-anleitung.html#disqus_thread">comments</a></p>
         </article>
 
 
@@ -380,7 +234,7 @@ limitations under the License.</p> </div><!-- /.entry-content -->
 </div>
 </div>
       <div class="footer pagination-centered">
-        &copy; epydial 2012 | made with bootstrap | Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+        &copy; epydial 2013 | made with bootstrap | Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
                 which takes great advantage of <a href="http://python.org">Python</a>.
       </div>
 

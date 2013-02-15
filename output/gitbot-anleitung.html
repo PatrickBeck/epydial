@@ -28,7 +28,7 @@
     <script type="text/javascript" src="./theme/fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
     <link rel="stylesheet" href="./theme/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
     <script type="text/javascript" src="./theme/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <!--[if IE 7]>
     <link rel="stylesheet" href="./theme/css/font-awesome-ie7.min.css">
     <![endif]-->
@@ -36,6 +36,7 @@
     <style type="text/css">
       body {
         background-image: url(./theme/img/bg.jpg);
+        font-family: 'Ubuntu', sans-serif !important;
       }
       
       [class^="icon-"], [class*=" icon-"] {
@@ -76,7 +77,11 @@
         }      
        
       .footer {
-        background-color: black;
+        
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
         color: white;
         padding: 20px;
         margin: -20px;
@@ -89,6 +94,8 @@
        hr {
         border-color: black;
         }        
+        
+      
         
     </style>
 
@@ -143,8 +150,7 @@
                 <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./index.html#about">About</a></li>
 	            <li><a href="./index.html#screenshots">Screenshots</a></li>
-                                                                    <li><a href="./pages/twitter-anleitung.html">Twitter Anleitung</a></li>
-                                        	    <li><a href="https://gitorious.org/~fgau">Get it now!</a></li>
+                                                                        	    <li><a href="https://gitorious.org/~fgau">Get it now!</a></li>
                 <li><a href="./index.html#contact">Contact us</a></li>
                 <li><a href="./feeds/all.atom.xml"><i class="icon-rss icon-2x"></i></a></li
             </ul>
@@ -164,26 +170,21 @@
         
 <section id="content" class="body">
   <header>
-  <hr>
-    <h2 class="entry-title pagination-right">
+    <h2 class="entry-title">
       <a href="gitbot-anleitung.html" rel="bookmark"
          title="Permalink to Gitbot Anleitung">Gitbot Anleitung</a></h2>
   
   </header>
   
-  <footer class="post-info pagination-right">
-    <abbr class="published" title="2010-12-04T10:20:00">
-      Sa 04 Dezember 2010
-    </abbr>
-        <address class="vcard author">
-      By <a class="url fn" href="./author/alexis-metaireau.html">Alexis Metaireau</a>
-    </address>
-        <p>tags: <a href="./tag/thats.html">thats </a><a href="./tag/awesome.html">awesome </a></p>    <a href="./gitbot-anleitung.html#disqus_thread">comments</a>
-  </footer><!-- /.post-info -->
-  <hr>
+               <p><footer class="post-info">
+                    <abbr class="published" title="2010-12-04T10:20:00"> Sa 04 Dezember 2010 </abbr>
+                     | <a class="url fn" href="./author/alexis-metaireau.html">Alexis Metaireau</a></p>
+                    
+                    
+                </footer><!-- /.post-info -->
+  
   <div class="entry-content">
-    <h1>gitbot</h1>
-<p>Gitbot prints git updates to the irc network. For this it uses gitcheck.py to generate a list with all updates since the last posting and gitbot.py do the posting to the network.</p>
+    <p>Gitbot prints git updates to the irc network. For this it uses gitcheck.py to generate a list with all updates since the last posting and gitbot.py do the posting to the network.</p>
 <h2>Features</h2>
 <ul>
 <li>monitors repos and branches</li>
@@ -224,7 +225,8 @@ Example with username: ?pyneo PBeck -
 <div class="codehilite"><pre><span class="err">*/</span><span class="mi">5</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">gitbot</span><span class="o">/</span><span class="n">runtest</span><span class="p">.</span><span class="n">sh</span>
 </pre></div>
   </div><!-- /.entry-content -->
-  <hr>
+  
+    <hr>
       <div id="disqus_thread"></div>
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -245,7 +247,7 @@ var disqus_identifier = "gitbot-anleitung.html";
 </div>
 </div>
       <div class="footer pagination-centered">
-        &copy; epydial 2012 | made with bootstrap | Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+        &copy; epydial 2013 | made with bootstrap | Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
                 which takes great advantage of <a href="http://python.org">Python</a>.
       </div>
 

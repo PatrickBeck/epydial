@@ -1,3 +1,3 @@
 # epydial
 
-Neue epydial Webseite. Bisher nur Design, mal schauen was an Background Technik zum Einsatz kommt.
+epydial website designed with bootstrap. Powered by pelican. Design and posts are saved in this repository.

@@ -1,2 +1,11 @@
 {% extends "blog.html" %}
 {% block title %}{{ SITENAME }} - {{ category }}{% endblock %}
+
+{% block content %}
+<section id="content">
+
+    <h1>Posts in {{category}}</h1><hr>
+    {% include 'post_view.html' %}
+    
+</section><!-- /#content -->
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% for article in articles_page.object_list %}
+       <article class="hentry">
+             <p>   <footer class="post-info ">
+                    <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+                    {% if article.author %} | <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>{% endif %}
+                    | <a class="url fn" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></p>                   
+                <header> <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3> </header>
+               </footer><!-- /.post-info -->
+                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+                <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">comments</a></p>
+        </article>
+{% endfor %}

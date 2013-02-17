@@ -1,7 +1,5 @@
 Title: KFZcheck erklärt
 Date: 2010-12-05 10:20
-Tags: thats, awesome
-Category: yeah
 Author: Alexis Metaireau
 
 KFZcheck is a small program written in python and uses the Qt toolkit (since Version 2.0)

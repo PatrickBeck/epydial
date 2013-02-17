@@ -1,28 +1,11 @@
 {% extends "base.html" %}
+{% block title %}{{ SITENAME }} - Whats Up?{% endblock %}
 {% block content %}
-
 
 <section id="content">
 
-<h1>Whats Up?</h1><hr>
-
-
-{% for article in articles_page.object_list %}
-       <article class="hentry">
-             <p>   <footer class="post-info ">
-                    <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-                    {% if article.author %} | <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>{% endif %}</p>
-                <header> <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3> </header>
-                
-
-                    
-                    
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
-                <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">comments</a></p>
-        </article>
-{% endfor %}
-
+    <h1>Whats Up?</h1><hr>
+    {% include 'post_view.html' %}
 
 </section><!-- /#content -->
 {% endblock content %}

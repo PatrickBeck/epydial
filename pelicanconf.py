@@ -13,6 +13,10 @@ DEFAULT_LANG = u'en'
 DEFAULT_PAGINATION = 10
 THEME = "epydialtheme"
 
-DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'blog')
+MD_EXTENSIONS = (['codehilite','extra','nl2br'])
+# http://pythonhosted.org/Markdown/extensions/index.html
+
+DIRECT_TEMPLATES = ('index', 'blog')
+USE_FOLDER_AS_CATEGORY = (True)
 PAGINATED_DIRECT_TEMPLATES = (('blog',))
 DISQUS_SITENAME = 'epydial'

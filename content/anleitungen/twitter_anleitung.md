@@ -1,7 +1,5 @@
 Title: Twitter Anleitung
 Date: 2010-12-03 10:20
-Tags: thats, awesome
-Category: yeah
 Author: Alexis Metaireau
 
 Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat).

@@ -49,15 +49,21 @@
     <script type="text/javascript" src="{{ SITEURL }}/theme/fancybox/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
     <link rel="stylesheet" href="{{ SITEURL }}/theme/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
     <script type="text/javascript" src="{{ SITEURL }}/theme/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
     <!--[if IE 7]>
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome-ie7.min.css">
     <![endif]-->
     
     <style type="text/css">
       body {
-        background-image: url({{ SITEURL }}/theme/img/bg.jpg);
         font-family: 'Ubuntu', sans-serif !important;
+        background-image: url({{ SITEURL }}/theme/img/bg.jpg);
+        @font-face {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Ubuntu'), url({{ SITEURL }}/theme/font/ubuntu_font.woff) format('woff');
+      }
       }
       
       [class^="icon-"], [class*=" icon-"] {

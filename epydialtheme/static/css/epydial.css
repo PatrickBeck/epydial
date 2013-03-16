@@ -1,12 +1,12 @@
 
 body {
+    background-image: url(../img/bg.jpg);
     font-family: 'Ubuntu', sans-serif !important;
-    background-image: url({{ SITEURL }}/theme/img/bg.jpg);
     @font-face {
        font-family: 'Ubuntu';
        font-style: normal;
        font-weight: 400;
-      src: local('Ubuntu'), url({{ SITEURL }}/theme/font/ubuntu_font.woff) format('woff');
+      src: local('Ubuntu'), url(../font/ubuntu_font.woff) format('woff');
       }
 }
       

@@ -1,0 +1,77 @@
+
+body {
+    font-family: 'Ubuntu', sans-serif !important;
+    background-image: url({{ SITEURL }}/theme/img/bg.jpg);
+    @font-face {
+       font-family: 'Ubuntu';
+       font-style: normal;
+       font-weight: 400;
+      src: local('Ubuntu'), url({{ SITEURL }}/theme/font/ubuntu_font.woff) format('woff');
+      }
+}
+      
+      [class^="icon-"], [class*=" icon-"] {
+        width: 20px;
+}
+
+/* Custom container */
+.container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    margin: 20px 0;
+    text-align: center;
+}
+      
+.jumbotron h1 {
+    font-size: 72px;
+    line-height: 1;
+}
+      
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+      
+pre {
+    background-color: black;
+    color: white;
+}      
+       
+a:hover {
+    color: #DB9E27;
+}
+      
+a { 
+    color: #8E620D
+}
+    
+.footer {
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+    color: white;
+    padding: 20px;
+    margin: -20px;
+}
+        
+       article {
+        padding-bottom: 60px;
+        }
+        
+       hr {
+        border-color: black;
+        }        

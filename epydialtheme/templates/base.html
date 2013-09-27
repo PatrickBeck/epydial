@@ -92,19 +92,19 @@
   <body>
 
 
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-        <a class="brand hidden-desktop" href="{{ SITEURL }}/index.html">epydial</a>
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<div class="container-narrow">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+        
+        <a class="navbar-brand hidden-desktop" href="{{ SITEURL }}/index.html">epydial</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
-          
+          </button>
+          </div>
           <div class="nav-collapse collapse">
-            <ul class="nav">
+            <ul class="nav navbar-nav">
                 <li{% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}/index.html">Home</a></li>
                 <li{% if page_name == 'blog' %} class="active"{% endif %}><a href="{{ SITEURL }}/blog.html">Blog</a></li>
                 <li><a href="{{ SITEURL }}/index.html#about">About</a></li>
@@ -129,15 +129,14 @@
           </div><!--/.nav-collapse -->
           
         </div>
-      </div>
-    </div>
+    </nav>
     
     <div class="container-narrow well">
-      <div class="row-fluid marketing">
-	<div class="span2 hidden-phone">
+      <div class="row marketing">
+	<div class="col-md-2 hidden-sm">
 	<img src="{{ SITEURL }}/theme/img/logo_180.png" alt="epydial" style="position:fixed;"/>
 </div>
-<div class="span10">
+<div class="col-md-10">
         {% block content %}
         {% endblock %}
 </div>

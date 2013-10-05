@@ -1,4 +1,5 @@
 Title: New epydial website
+date: 2013-10-05
 Author: Patrick Beck
 
 A short update - not much has changed. I have only replaced the old django site with a new static blog. Its github based and use Pelican for static site generation.

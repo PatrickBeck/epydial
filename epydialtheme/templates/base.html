@@ -93,17 +93,17 @@
 
 
 <div class="container-narrow">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
-        
         <a class="navbar-brand hidden-desktop" href="{{ SITEURL }}/index.html">epydial</a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           </div>
-          <div class="nav-collapse collapse">
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li{% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}/index.html">Home</a></li>
                 <li{% if page_name == 'blog' %} class="active"{% endif %}><a href="{{ SITEURL }}/blog.html">Blog</a></li>
@@ -127,9 +127,8 @@
             </ul>
             
           </div><!--/.nav-collapse -->
-          
-        </div>
     </nav>
+</div>
     
     <div class="container-narrow well">
       <div class="row marketing">

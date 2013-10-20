@@ -75,4 +75,14 @@ a {
         
        hr {
         border-color: black;
-        }        
+        }
+
+/*@media (min-width: 768px){
+        .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        }
+}
+*/
